@@ -1,0 +1,960 @@
+/*
+
+  Theme Name: Flexis
+
+  	Template URI: http://www.themeelite.com/
+
+	Description: Full Screen Design Agency Template
+
+	Author: Themeelite
+
+	Author URI: http://www.themeelite.com
+
+	License: GNU General Public License version 3.0
+
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+	Version: 1.0
+
+  
+
+    1. Body style
+
+	2. Headings
+
+	3. Header
+
+		3.1 Menu Style
+
+	4. About us
+
+	5. Logoes Slider
+
+	6. All-services
+
+	7. Latest Project
+
+	8. Testimonial
+
+	9. Let's start a project
+
+	10. Footer
+
+	
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900);
+ @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900,900italic);
+/* ===========================
+
+   ======= 1. Body style ======== 
+
+   =========================== */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #4e4a4f;
+	background-color: #FFF;
+	font-weight: 400
+}
+a:focus, img:focus, button:focus, .btn:focus {
+	outline: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: #010101;
+	transition-delay: 0s;
+	transition-duration: 0.6s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input, textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	display: block;
+	border: none;
+	max-width: 100%;
+	height: auto;
+	font-size: 0;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+button, html input[type="button"],/* 1 */ input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+ *overflow:visible;
+}
+body, img {
+ transition: all .2s linear;
+ -o-transition: all .2s linear;
+ -moz-transition: all .2s linear;
+ -webkit-transition: all .2s linear;
+}
+td {
+	text-align: left;
+	vertical-align: top;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, main {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, img, main {
+	display: block
+}
+audio, canvas, video {
+	display: inline-block;
+ *display:inline;
+ *zoom:1
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+.clear {
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+
+::-moz-selection {
+ background:#4d4d4d;
+ color:#fff;
+ text-shadow:none;
+}
+
+::selection {
+ background: #4d4d4d;
+ color: #fff;
+ text-shadow: none;
+}
+ @font-face {
+ font-family: 'Source Code Pro';
+ font-family: 'Source Sans Pro', sans-serif;
+}
+/* ===========================
+
+   ========= 2. Headings ======== 
+
+   =========================== */
+
+h1 {
+	font-family: 'Source Code Pro';
+	font-size: 30px;
+	line-height: 32px;
+	font-weight: 400;
+}
+h2 {
+	font-family: 'Source Code Pro';
+	font-size: 30px;
+	line-height: 33px;
+	font-weight: 400;
+}
+h3 {
+	font-family: 'Source Code Pro';
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 400;
+}
+h4 {
+	font-family: 'Source Code Pro';
+	font-size: 18px;
+	line-height: 19px;
+	font-weight: 400;
+}
+h5 {
+	font-family: 'Source Code Pro';
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+}
+h6 {
+	font-family: 'Source Code Pro';
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 400;
+}
+/* ===========================
+
+========= 3. Header ======== 
+
+=========================== */
+
+.header {
+	position: relative;
+	width: 100%;
+}
+.header .header_v1 figure {
+	text-align: left
+}
+.header .header_v1 figure figcaption {
+	text-transform: uppercase;
+	position: relative;
+	z-index: 60;
+	padding-top: 257px
+}
+.header .header_v1 figure figcaption h2 {
+	color: #FFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 37px;
+	line-height: 38px;
+	letter-spacing: 2px;
+}
+.header .header_v1 figure figcaption p {
+	font-size: 13px;
+	line-height: 24px;
+	color: #eaeaea;
+	letter-spacing: 1px;
+	padding-top: 31px;
+	font-weight: 400;
+	text-transform: capitalize;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.header .header_v1 figure figcaption p a {
+	display: block;
+	width: 178px;
+	height: 49px;
+	line-height: 49px;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	background-color: #fff445;
+	color: #060606;
+	text-align: center;
+	margin-top:33px
+}
+.header .header_v1 figure.video-header figcaption a {
+	margin:33px auto
+}
+.header .header_v1 figure figcaption p a:hover {
+	background-color: #000;
+	color:#FFF
+}
+.header .header_v1 .bg_overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .8)
+}
+.header .static-header figure figcaption {
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 60;
+	left: 0;
+	right: 0;
+	margin-top: 250px;
+	top: 0;
+	padding: 0
+}
+.header .header_v1 figure.video-header {
+	position:relative
+}
+.header .header_v1 figure.video-header figcaption {
+	position:absolute;
+	left:0;
+	right:0;
+	padding-top:0;
+	top:224px;
+	text-align:center
+}
+.header .header_v1 figure.video-header figcaption p {
+	padding-top:0
+}
+.header .header_v1 figure.video-header figcaption a:hover {
+	background-color:#fff445;
+	color:#000
+}
+#home-image img {
+	width:100% !important
+}
+.video-section .pattern-overlay {
+	background-color: rgba(71, 71, 71, 0.59);
+	padding: 110px 0 32px;
+	min-height: 680px;
+}
+.video-section .buttonBar {
+	display:none
+}
+.player {
+	font-size:1px
+}
+/* ===========================
+
+ =========  3.1 Menu Style ======== 
+
+ =========================== */
+
+.header .navbar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	transition-delay: 0s;
+	transition-duration: 0.6s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.header .navbar {
+	background-color: #fff;
+	min-height: 80px
+}
+.header .navbar.stuck {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding-top: 0;
+	min-height: 80px
+}
+.header h1 {
+	float: left;
+	margin-top: 20px;
+	transition-delay: 0s;
+	transition-duration: 0.6s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.header h1 img {
+	transition-delay: 0s;
+	transition-duration: 0.6s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.header h1 .logo_hove {
+	display: none
+}
+.header .navbar.stuck h1 .logo {
+	display: none
+}
+.header .navbar.stuck h1 {
+	margin-top: 20px
+}
+.header .navbar.stuck h1 .logo_hove {
+	display: block
+}
+.header nav {
+	float: right;
+	position: relative
+}
+.header nav #menu-button {
+	width: 28px;
+	font-size: 0;
+	float: right;
+	height: 18px;
+	position: relative;
+	margin-top: 51px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+ -webkit-transition: .5s ease-in-out;
+ -moz-transition: .5s ease-in-out;
+ -o-transition: .5s ease-in-out;
+ transition: .5s ease-in-out;
+	cursor: pointer;
+	display: none
+}
+.header .navbar.stuck nav #menu-button {
+	margin-top: 30px;
+}
+.header nav #menu-button span {
+	display: block;
+	position: absolute;
+	z-index: 60;
+	height: 3px;
+	width: 100%;
+	background: #000;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+ -webkit-transition: .25s ease-in-out;
+ -moz-transition: .25s ease-in-out;
+ -o-transition: .25s ease-in-out;
+ transition: .25s ease-in-out;
+}
+.header .navbar.stuck nav #menu-button span {
+	background: #010101;
+}
+ .header nav #menu-button span:nth-child(1) {
+ top: 0px;
+}
+ .header nav #menu-button span:nth-child(2) {
+ top: 7px;
+}
+ .header nav #menu-button span:nth-child(3) {
+ top: 14px;
+}
+ .header nav #menu-button.open span:nth-child(1) {
+ top: 10px;
+ -webkit-transform: rotate(135deg);
+ -moz-transform: rotate(135deg);
+ -o-transform: rotate(135deg);
+ transform: rotate(135deg);
+}
+ .header nav #menu-button.open span:nth-child(2) {
+ opacity: 0;
+ left: -60px;
+}
+ .header nav #menu-button.open span:nth-child(3) {
+ top: 10px;
+ -webkit-transform: rotate(-135deg);
+ -moz-transform: rotate(-135deg);
+ -o-transform: rotate(-135deg);
+ transform: rotate(-135deg);
+}
+.header nav ul {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition-delay: 0s;
+	transition-duration: 0.6s;
+	transition-property: all;
+	transition-timing-function: ease;
+}
+.header .navbar.stuck nav ul {
+	margin-top: 0;
+}
+.header nav ul > li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding-left: 35px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	position: relative
+}
+.header nav ul > li > a {
+	color: #000;
+	line-height: 79px;
+	display: block
+}
+.header .navbar.stuck nav ul > li > a {
+	color: #000
+}
+<!--
+.header nav ul > li:hover ul {
+	display: block
+}
+-->
+.header nav ul > li ul {
+	position: absolute;
+	right: 0;
+	top: 82px;
+	border: 2px solid #4d4d4d;
+	width: 203px;
+	padding-left: 24px;
+	padding-right: 26px;
+	padding-top: 26px;
+	padding-bottom: 6px;
+	display: none
+}
+.header .navbar.stuck nav ul li ul {
+	border-color: #FFF;
+	top: 77px
+}
+.header .navbar.stuck nav ul li ul li a {
+	color: #FFF
+}
+.header nav ul > li ul li {
+	padding-left: 0;
+	font-size: 13px;
+}
+.header nav ul > li ul li a {
+	line-height: 14px;
+	padding-bottom: 24px
+}
+.header nav ul > li ul li a {
+	color: #FFF
+}
+.header_v1 {
+	height: 667px;
+	overflow: hidden;
+}
+.static-header-image {
+	height:603px
+}
+.slides-pagination {
+	display: none
+}
+/* ===========================
+
+========= 4. About Home page ======== 
+
+=========================== */
+
+.about_pan_home {
+	padding-top: 114px;
+	padding-bottom: 120px
+}
+.about_pan_home article header {
+	padding-bottom: 50px;
+	display: block
+}
+.about_pan_home article header h2 {
+	font-size: 27px;
+	line-height: 28px;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	color: #130e14;
+	letter-spacing: 2px;
+	padding-bottom: 6px;
+	display: block
+}
+.about_pan_home article header h3, .about_pan_home aside h3 {
+	font-size: 13px;
+	line-height: 14px;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color: #130e14;
+	letter-spacing: 5px
+}
+.about_pan_home article p, .about_pan_home aside p {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 23px;
+	color: #4e4a4f;
+	letter-spacing: 1px
+}
+.about_pan_home article a {
+	font-size: 12px;
+	text-align: center;
+	line-height: 49px;
+	display: block;
+	text-transform: uppercase;
+	color: #FFF;
+	width: 226px;
+	letter-spacing: 5px;
+	background-color: #000;
+	margin-top: 32px
+}
+.about_pan_home article a:hover {
+	background-color: #777777
+}
+.about_pan_home aside h3 {
+	font-weight: 900;
+	color: #000;
+	padding-bottom: 14px
+}
+.about_pan_home aside section {
+	margin-bottom: 42px
+}
+/* ===========================
+
+========= 5. Logoes Silde ======== 
+
+=========================== */
+
+.logoes-pan {
+	position: relative;
+	background-image: url(../images/logo_bg_cor.jpg);
+	background-repeat: repeat-x;
+	background-position: center center;
+	padding-top: 81px;
+	padding-bottom: 73px
+}
+.logoes-pan ul {
+	margin: 0 auto;
+	padding: 0 10%
+}
+.logoes-pan ul li {
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
+.logoes-pan ul li img {
+	margin: 0 auto;
+	display: block
+}
+.logoes-pan .owl-buttons div {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 16px;
+	cursor: pointer;
+	width: 68px;
+	height: 13px;
+	background-position: 0 0;
+	background-repeat: no-repeat
+}
+.logoes-pan .owl-buttons div.owl-prev {
+	left: 0;
+	background-image: url(../images/prev.png)
+}
+.logoes-pan .owl-buttons div.owl-next {
+	right: 0;
+	background-image: url(../images/next.png)
+}
+/* ===========================
+
+========= 6. All Services ======== 
+
+=========================== */
+
+.all-services {
+	padding-top: 96px;
+	padding-bottom: 53px;
+	background-color: #fafafa
+}
+.all-services .article {
+	overflow: hidden;
+	padding-bottom: 75px
+}
+.all-services .article figure {
+	float: left;
+	width: 69px
+}
+.all-services .article figure span {
+	background-color: #000;
+	text-align: center;
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: #FFF;
+	font-size: 15px;
+	display: block
+}
+.all-services .article section {
+	float: left;
+	width: 273px
+}
+.all-services .article section h3 {
+	text-transform: uppercaseq;
+	padding-bottom: 15px;
+	font-size: 13px;
+	line-height: 14px;
+	letter-spacing: 5px;
+	color: #000;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.all-services .article section p {
+	color: #555;
+	font-size: 14px;
+	line-height: 23px;
+	font-weight: 300;
+	letter-spacing: 1px
+}
+/* ===========================
+
+========= 7. Latest Project ======== 
+
+=========================== */
+
+.latest-projects-pan {
+	padding-top: 118px;
+	padding-bottom: 106px;
+}
+.latest-projects-top header h3 {
+	font-size: 27px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #130e14;
+	font-weight: 700;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-bottom: 6px;
+	letter-spacing: 3px;
+}
+.latest-projects-top header h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 13px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #232024;
+	letter-spacing: 5px
+}
+.latest-projects-top header {
+	padding-bottom: 52px
+}
+.latest-projects-pan p {
+	font-size: 15px;
+	line-height: 23px;
+	letter-spacing: 2px;
+	color: #555;
+	font-weight: 300;
+	padding-bottom: 23px
+}
+.projects-corporate ul {
+	text-align: right
+}
+.projects-corporate ul li {
+	display: inline-block
+}
+.projects-images ul li {
+	-moz-box-shadow: 0 0 0 1px #fff;
+	-webkit-box-shadow: 0 0 0 1px #fff;
+	box-shadow: 0 0 0 1px #fff;
+	overflow: hidden;
+	position: relative;
+}
+.projects-images ul li {
+	overflow: hidden;
+	width:49%;
+	display:inline-block
+}
+.projects-images ul li img {
+	width:100%;
+	max-width:100%;
+	display:block
+}
+.projects-images ul li figcaption {
+	background: rgba(255, 244, 69, 0.7);
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	-moz-transition: opacity, 0.3s;
+	-o-transition: opacity, 0.3s;
+	-webkit-transition: opacity, 0.3s;
+	transition: opacity, 0.3s;
+}
+.projects-images ul li section {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.projects-images ul li h5, .projects-images ul li p, .projects-images ul li img {
+	-moz-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	-webkit-transition: all, 0.5s;
+	transition: all, 0.5s;
+}
+.projects-images ul li h5, .projects-images ul li p {
+	color: #181818;
+	margin: 0;
+	opacity: 0;
+}
+.projects-images ul li h5 {
+	margin-bottom: 5px;
+	-moz-transform: translate3d(0, -200%, 0);
+	-ms-transform: translate3d(0, -200%, 0);
+	-webkit-transform: translate3d(0, -200%, 0);
+	transform: translate3d(0, -200%, 0);
+}
+.projects-images ul li p {
+	-moz-transform: translate3d(0, 200%, 0);
+	-ms-transform: translate3d(0, 200%, 0);
+	-webkit-transform: translate3d(0, 200%, 0);
+	transform: translate3d(0, 200%, 0);
+}
+.projects-images ul li:hover img {
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.projects-images ul li:hover figcaption {
+	opacity: 1;
+}
+.projects-images ul li:hover figcaption h5, .projects-images ul li:hover figcaption p {
+	opacity: 1;
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.projects-corporate a {
+	display: block;
+	text-align: center;
+	width: 46px;
+	height: 46px;
+	border: 2px solid #000;
+	line-height: 44px;
+	font-size: 18px;
+	margin: 0 auto;
+	border-radius: 100%
+}
+.view_button {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 49px;
+	display: block;
+	background-color: #000;
+	text-align: center;
+	color: #FFF;
+	letter-spacing: 4px;
+	width: 236px;
+}
+.view_button:hover {
+	background-color: #c9cacb
+}
+/* ===========================
+
+========= 8. Testimonial ======== 
+
+=========================== */
+
+.testimonial_pan {
+	background-color: #f0f0f0;
+	padding-top: 114px;
+	padding-bottom: 120px
+}
+.testimonial_pan article p {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing:2px;
+	padding-bottom: 30px
+}
+.testimonial_pan article h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 14px;
+	letter-spacing: 5px;
+	color: #130e14;
+	font-weight:600;
+	border-bottom: 1px solid #a3a4ab;
+	display: inline-block;
+	padding-bottom: 20px
+}
+.testimonial_pan .owl-controls .owl-pagination {
+	text-align: center;
+	padding-top: 28px
+}
+.testimonial_pan .owl-controls .owl-pagination .owl-page {
+	display: inline-block;
+	background-color: #b7b7b7;
+	width: 12px;
+	height: 11px;
+	border-radius: 100%;
+	margin: 0 4px
+}
+.testimonial_pan .owl-controls .owl-pagination .owl-page.active {
+	background-color: #130e14
+}
+/* ===========================
+
+========= 9 . Let's start a project ======== 
+
+=========================== */
+
+.letsproject-pan {
+	background-color: #fff445;
+	padding-top: 49px;
+	padding-bottom: 50px;
+}
+.letsproject-pan p {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 21px;
+	line-height: 49px;
+	font-weight: 700;
+	letter-spacing: 3px
+}
+.letsproject-pan a {
+	text-transform: uppercase;
+	background-color: #000000;
+	font-weight: 200;
+	font-size: 12px;
+	line-height: 49px;
+	color: #FFF;
+	letter-spacing: 4px;
+	text-align: center;
+	display: block
+}
+/* ===========================
+
+========= 10. Footer ======== 
+
+=========================== */
+
+.footer {
+	background-color: #181818;
+	padding-top: 119px;
+	padding-bottom: 183px;
+	color: #999;
+	font-weight: 200
+}
+.footer address {
+	font-size: 12px;
+	line-height: 23px;
+	font-style: normal;
+	letter-spacing: 2px
+}
+.footer address a {
+	color: #787878;
+	display: block;
+	text-decoration: underline
+}
+.footer address a:hover {
+	color: #FFF
+}
+.footer menu.socil-icon-one {
+	margin-left: 55px
+}
+.footer menu.socil-icon-two {
+	margin-left: 16px
+}
+.footer ul li {
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 37px;
+	list-style: none;
+	letter-spacing: 3px;
+	font-weight: 200
+}
+.footer ul li a {
+	display: block;
+	color: #999
+}
+.footer ul li a:hover {
+	color: #FFF
+}
+.footer p {
+	font-size: 12px;
+	line-height: 13px;
+	letter-spacing: 2px;
+	padding-top: 2px
+}
+.footer address figure {
+	padding-bottom: 20px
+}
